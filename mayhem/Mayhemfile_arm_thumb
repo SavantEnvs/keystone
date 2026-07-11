@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: arm_thumb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/arm_thumb/testsuite
+cmds:
+  - cmd: /mayhem/arm_thumb
+    libfuzzer: true
+    timeout: 30

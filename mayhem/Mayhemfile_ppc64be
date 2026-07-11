@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: ppc64be
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ppc64be/testsuite
+cmds:
+  - cmd: /mayhem/ppc64be
+    libfuzzer: true
+    timeout: 30

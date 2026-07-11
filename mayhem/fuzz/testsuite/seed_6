@@ -1,0 +1,2 @@
+mov r13,QWORD PTR [r14+0x10]
+

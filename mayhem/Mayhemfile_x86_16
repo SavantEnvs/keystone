@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: x86_16
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/x86_16/testsuite
+cmds:
+  - cmd: /mayhem/x86_16
+    libfuzzer: true
+    timeout: 30

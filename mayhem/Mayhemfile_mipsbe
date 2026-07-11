@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: mipsbe
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mipsbe/testsuite
+cmds:
+  - cmd: /mayhem/mipsbe
+    libfuzzer: true
+    timeout: 30

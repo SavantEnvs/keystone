@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: systemz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/systemz/testsuite
+cmds:
+  - cmd: /mayhem/systemz
+    libfuzzer: true
+    timeout: 30

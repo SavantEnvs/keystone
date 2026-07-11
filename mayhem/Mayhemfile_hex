@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: hex
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hex/testsuite
+cmds:
+  - cmd: /mayhem/hex
+    libfuzzer: true
+    timeout: 30

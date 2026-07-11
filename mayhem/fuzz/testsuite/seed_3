@@ -1,0 +1,2 @@
+mov QWORD PTR [rsp+0x8],rcx
+

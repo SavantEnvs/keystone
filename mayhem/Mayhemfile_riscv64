@@ -1,0 +1,9 @@
+project: savantenvs/keystone
+target: riscv64
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/riscv64/testsuite
+cmds:
+  - cmd: /mayhem/riscv64
+    libfuzzer: true
+    timeout: 30
